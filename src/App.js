@@ -39,6 +39,51 @@ export default function App() {
         { answerText: 'Gustavo but you can call me Gus', isCorrect: true },
       ],
     },
+    {
+      questionText: 'Highest grossing film of all time that earned it ',
+      answerOptions: [
+        { answerText: 'Avengers endgame', isCorrect: true },
+        { answerText: 'Avengers infinity war', isCorrect: false },
+        { answerText: 'The force awakens', isCorrect: false },
+        { answerText: 'Avatar', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'When did the first pokemon episode air',
+      answerOptions: [
+        { answerText: 'April 1997', isCorrect: true },
+        { answerText: 'May 1997', isCorrect: false },
+        { answerText: 'April 1996', isCorrect: false },
+        { answerText: 'none of the above', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'Current number of films in the mcu',
+      answerOptions: [
+        { answerText: '30', isCorrect: false },
+        { answerText: '31', isCorrect: false },
+        { answerText: '32', isCorrect: true },
+        { answerText: '33', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'Which one of the following games won game of the year ',
+      answerOptions: [
+        { answerText: 'The witcher 2', isCorrect: false },
+        { answerText: 'God of war ragnarok', isCorrect: false },
+        { answerText: 'Spiderman 2018', isCorrect: false },
+        { answerText: 'The last of us part 1', isCorrect: true },
+      ],
+    },
+    {
+      questionText: 'Highest rated show on IMDB ',
+      answerOptions: [
+        { answerText: 'Better Call Saul', isCorrect: false },
+        { answerText: 'Avatar the last airbender', isCorrect: false },
+        { answerText: 'The Marvelous Mrs Maisel', isCorrect: false },
+        { answerText: 'Game of thrones', isCorrect: true },
+      ],
+    },
   ];
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -93,4 +138,5 @@ export default function App() {
     </div>
   );
 }
+
 
