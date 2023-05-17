@@ -92,9 +92,9 @@ export default function App() {
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
-      alert("Correct!")
+      document.getElementById("crw").innerHTML = "Your answer for the last question was correct"
     } else{
-      alert("Incorrect!")
+      document.getElementById("crw").innerHTML = "Your answer for the last question was wrong"
     }
 
     const nextQuestion = currentQuestion + 1;
@@ -133,10 +133,11 @@ export default function App() {
               </button>
             ))}
           </div>
+          <h4 id="crw">Correct or wrong?</h4> 
         </>
       )}
     </div>
-  );
+  );  
 }
 
 
