@@ -47,6 +47,9 @@ export default function App() {
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
+      alert("Correct!")
+    } else{
+      alert("Incorrect!")
     }
 
     const nextQuestion = currentQuestion + 1;
@@ -62,7 +65,7 @@ export default function App() {
     setCurrentQuestion(0);
     setShowScore(false);
   };
-
+ 
   return (
     <div className='app'>
       {showScore ? (
