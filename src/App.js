@@ -84,6 +84,15 @@ export default function App() {
         { answerText: 'Game of thrones', isCorrect: true },
       ],
     },
+    {
+      questionText: 'Actor with the most critically acclaimed films ',
+      answerOptions: [
+        { answerText: 'Megan Fox', isCorrect: false },
+        { answerText: 'Leonardo Dicaprio', isCorrect: true },
+        { answerText: 'Adam Sandler', isCorrect: false },
+        { answerText: 'Tom Hanks', isCorrect: true },
+      ],
+    },
   ];
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -113,6 +122,7 @@ export default function App() {
  
   return (
     <div className='app'>
+      <title>Quiz. Can you get all questions right?</title>
       {showScore ? (
         <div className='score-section'>
           <div>You scored {score} out of {questions.length}</div>
